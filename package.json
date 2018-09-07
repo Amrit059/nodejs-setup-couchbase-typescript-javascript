@@ -1,0 +1,49 @@
+{
+    "name": "tryment-new-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "start": "npm run build && node ./dist/server.js",
+        "start:local": "set NODE_ENV=default && npm start",
+        "start:dev": "set NODE_ENV=dev && npm start",
+        "start:stage": "set NODE_ENV=stage && npm start",
+        "start:prod": "set NODE_ENV=prod && npm start"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/atob": "^2.1.0",
+        "@types/bcrypt": "^2.0.0",
+        "@types/body-parser": "^1.17.0",
+        "@types/cors": "^2.8.4",
+        "@types/dotenv": "^4.0.3",
+        "@types/express": "^4.11.1",
+        "@types/jsonwebtoken": "^7.2.7",
+        "ts-loader": "^4.3.0",
+        "ts-node": "^6.0.5",
+        "tslint": "^5.10.0",
+        "typescript": "^2.8.4",
+        "webpack": "^4.10.2",
+        "webpack-cli": "^2.1.4"
+    },
+    "dependencies": {
+        "@types/config": "0.0.34",
+        "@types/couchbase": "^2.1.30",
+        "atob": "^2.1.1",
+        "bcrypt": "^2.0.1",
+        "body-parser": "^1.18.3",
+        "config": "^1.30.0",
+        "cors": "^2.8.4",
+        "couchbase": "^2.4.6",
+        "dotenv": "^5.0.1",
+        "express": "^4.16.3",
+        "jsonwebtoken": "^8.2.2",
+        "npm": "^6.3.0",
+        "ottoman": "^1.0.5",
+        "reflect-metadata": "^0.1.12",
+        "typescript": "^2.8.4",
+        "uniqid": "^5.0.2"
+    }
+}
